@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- NOTE: Using https://tailwindcss.com/docs/installation/play-cdn as this is purely for developement and learning -->
+  <!-- NOTE: See https://tailwindcss.com/docs/installation for proper usage -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+    <div class="shrink-0">
+      <img class="h-12 w-12" src="img/logo.svg" alt="ChitChat Logo">
+    </div>
+    <div>
+      <div class="text-xl font-medium text-black">ChitChat</div>
+      <p class="text-slate-500 hover:bg-green-500">You have a new message (this becomes green on hover)!</p>
+      <p class="text-slate-500 bg-rose">You have a new message with bg-rose (note it doesn't work)!</p>
+      <p class="text-slate-500 bg-rose-500 rounded-t-xl">You have a new message with bg-rose-500 (note it does work)!
+      </p>
+      <p class="text-slate-500 bg-rose-500/50 rounded-br-xl rounded-tl-xl">You have a new message with bg-rose-500/50
+        (note the
+        opacity change)!</p>
+    </div>
+  </div>
+  <br>
+  <div class="p-6 max-w-sm mx-auto bg-white rounded-full hover:rounded shadow-lg flex items-center space-x-4">
+    <div class="shrink-0">
+      <img class="h-12 w-12" src="img/logo.svg" alt="ChitChat Logo">
+    </div>
+    <div>
+      <div class="text-xl font-medium text-black">ChitChat</div>
+      <p class="text-slate-500">You have a new message in a pill button which transforms on hover!</p>
+    </div>
+  </div>
+  <br>
+  <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg hover:shadow-2xl flex items-center space-x-4">
+    <div class="shrink-0">
+      <img class="h-12 w-12" src="img/logo.svg" alt="ChitChat Logo">
+    </div>
+    <div>
+      <div class="text-xl font-medium text-black">ChitChat</div>
+      <p class="text-slate-500 shadow-2xl">You have a new message!</p>
+      <input type="text" class="shadow-inner" />
+    </div>
+</body>
+
+</html>
